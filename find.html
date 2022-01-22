@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload</title>
+</head>
+<body>
+	<script>
+		    json_link = "pro.json";
+			var request = new XMLHttpRequest();
+			request.open('GET',json_link,true);
+			request.onload = function(){
+			 var obj = JSON.parse(this.response);
+			 if (request.status >= 200 && request.status < 400) {
+			 var temp = obj.products;
+			 const mySet1 = new Set();
+			 mySet1=temp.keys();
+			 let product_name = prompt("Please enter your product name", "AC");
+			 for (let item of mySet1) 
+			 	if(item=="product_name")
+			 }
+			} 
+			request.send();
+		</script>'
+</body>
+</html>
